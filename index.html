@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rantix Store — Tienda online de tecnología, gaming y gadgets. Audífonos, teclados mecánicos, smartwatches y controles.">
+  <title>Rantix Store | Tecnología y Gadgets</title>
+
+  <link rel="icon" type="image/png" href="assets/img/rantix-isotipo-favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="loader-overlay">
+    <div class="spinner"></div>
+    <p class="loader-texto">Cargando Rantix Store…</p>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">
+        <img src="assets/img/rantix-logo-transparente-blanco.svg" alt="Logotipo de Rantix Store" class="logo-brand">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+              aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#productos">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destacado">Destacado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+
+        <a href="#contacto" class="btn-carrito" aria-label="Carrito de compras">
+          <i class="bi bi-cart3"></i>
+          <span class="contador-carrito">3</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        <div class="col-12 col-md-7 col-lg-6 text-center text-md-start">
+          <span class="badge-pulso">
+            <i class="bi bi-lightning-charge-fill me-1"></i>Envío gratis desde S/ 199
+          </span>
+          <h1 class="titulo-animado">
+            Eleva tu <span class="texto-naranja">setup</span> al siguiente nivel
+          </h1>
+          <p class="texto-hero">
+            Audífonos, teclados mecánicos, wearables y controles seleccionados para
+            jugadores y creadores. Tecnología que se siente.
+          </p>
+          <div class="d-flex gap-3 justify-content-center justify-content-md-start flex-wrap">
+            <a href="#productos" class="btn btn-rantix btn-lg px-4">
+              Ver productos <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#contacto" class="btn btn-outline-light btn-lg px-4">Contáctanos</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-6 text-center">
+          <img src="assets/img/rantix-isotipo-transparente.svg"
+               alt="Isotipo de Rantix Store" class="isotipo-flotante">
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="productos" class="seccion">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="titulo-seccion">Nuestros <span class="texto-naranja">productos</span></h2>
+          <p class="texto-suave">Pasa el cursor sobre cada tarjeta y observa la transformación CSS.</p>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-producto caja-1">
+              <img src="assets/img/productos/audifonos.jpg" class="img-producto"
+                   alt="Audífonos gamer Ranger X con iluminación RGB">
+              <div class="cuerpo-tarjeta">
+                <span class="categoria">Audio</span>
+                <h3 class="fs-5 fw-bold mb-1">Audífonos Ranger X</h3>
+                <p class="descripcion">
+                  Sonido surround 7.1, micrófono con cancelación de ruido y luces RGB sincronizadas.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="precio">S/ 249.90</span>
+                  <button type="button" class="btn btn-rantix">
+                    Agregar <i class="bi bi-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-producto caja-2">
+              <img src="assets/img/productos/teclado.jpg" class="img-producto"
+                   alt="Teclado mecánico Nova TKL con switches rojos">
+              <div class="cuerpo-tarjeta">
+                <span class="categoria">Periféricos</span>
+                <h3 class="fs-5 fw-bold mb-1">Teclado Nova TKL</h3>
+                <p class="descripcion">
+                  Switches mecánicos rojos, formato tenkeyless y retroiluminación por tecla.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="precio">S/ 189.90</span>
+                  <button type="button" class="btn btn-rantix">
+                    Agregar <i class="bi bi-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="tarjeta-producto caja-3">
+              <img src="assets/img/productos/smartwatch.jpg" class="img-producto"
+                   alt="Smartwatch Vortex Fit 2 con correa deportiva">
+              <div class="cuerpo-tarjeta">
+                <span class="categoria">Wearables</span>
+                <h3 class="fs-5 fw-bold mb-1">Smartwatch Vortex Fit 2</h3>
+                <p class="descripcion">
+                  Pantalla AMOLED, GPS integrado, 100 modos deportivos y batería de 14 días.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="precio">S/ 329.90</span>
+                  <button type="button" class="btn btn-rantix">
+                    Agregar <i class="bi bi-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="destacado" class="seccion seccion-alterna">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+
+          <div class="col-12 col-lg-6">
+            <div class="escena-3d">
+              <div class="tarjeta-3d" tabindex="0">
+                <div class="cara cara-frontal">
+                  <img src="assets/img/productos/control.jpg"
+                       alt="Control Pro inalámbrico Rantix Pad color negro">
+                  <span class="etiqueta-destacado"><i class="bi bi-star-fill"></i> Destacado</span>
+                  <div class="info-frontal">
+                    <h3 class="fs-4 fw-bold mb-1">Control Pro Rantix</h3>
+                    <p class="mb-0 texto-suave">Gira la tarjeta con el cursor para ver los detalles</p>
+                  </div>
+                </div>
+
+                <div class="cara cara-trasera">
+                  <i class="bi bi-controller icono-trasero"></i>
+                  <h3 class="fs-4 fw-bold mb-0">Control Pro Rantix</h3>
+                  <ul class="lista-especificaciones text-start">
+                    <li><i class="bi bi-bluetooth"></i> Conexión Bluetooth 5.3</li>
+                    <li><i class="bi bi-battery-charging"></i> Batería de 40 horas</li>
+                    <li><i class="bi bi-hand-thumbs-up"></i> Diseño ergonómico antifatiga</li>
+                    <li><i class="bi bi-water"></i> Resistente a salpicaduras</li>
+                  </ul>
+                  <span class="precio precio-destacado">S/ 199.90</span>
+                  <button type="button" class="btn btn-rantix">
+                    Agregar al carrito <i class="bi bi-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <h2 class="titulo-seccion">Producto <span class="texto-naranja">destacado</span></h2>
+            <p class="texto-suave">
+              El favorito de la comunidad: precisión de gatillos ajustables, vibración háptica y
+              compatibilidad total con PC, consolas y móviles. Incluye base de carga magnética.
+            </p>
+            <ul class="lista-especificaciones text-start d-inline-block">
+              <li><i class="bi bi-check-circle-fill"></i> 12 meses sin intereses en todos los bancos</li>
+              <li><i class="bi bi-check-circle-fill"></i> Envío en 24 horas dentro de Lima</li>
+              <li><i class="bi bi-check-circle-fill"></i> 14 días de devolución garantizada</li>
+            </ul>
+            <div class="mini-escena">
+              <div class="sello-3d">
+                <i class="bi bi-patch-check-fill sello-icono"></i>
+                <div class="sello-texto">
+                  <strong>GARANTÍA RANTIX</strong>
+                  <small>24 meses en todos los productos</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="titulo-seccion">Ponte en <span class="texto-naranja">contacto</span></h2>
+          <p class="texto-suave">¿Dudas sobre un producto? Escríbenos y te respondemos en menos de 24 horas.</p>
+        </div>
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-12 col-lg-4">
+            <div class="tarjeta-info">
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <span class="icono-info"><i class="bi bi-geo-alt-fill"></i></span>
+                <div>
+                  <strong>Visítanos</strong><br>
+                  <span class="texto-suave">Av. Tecnología 123, Lima - Perú</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <span class="icono-info"><i class="bi bi-envelope-fill"></i></span>
+                <div>
+                  <strong>Escríbenos</strong><br>
+                  <span class="texto-suave">soporte@rantixstore.pe</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <span class="icono-info"><i class="bi bi-clock-fill"></i></span>
+                <div>
+                  <strong>Horario</strong><br>
+                  <span class="texto-suave">Lun - Sáb: 9 am a 8 pm</span>
+                </div>
+              </div>
+
+              <div class="redes">
+                <a href="#" class="icono-social" aria-label="Facebook de Rantix Store"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="icono-social" aria-label="Instagram de Rantix Store"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="icono-social" aria-label="TikTok de Rantix Store"><i class="bi bi-tiktok"></i></a>
+                <a href="#" class="icono-social" aria-label="YouTube de Rantix Store"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-7">
+            <form class="tarjeta-formulario" action="#" method="post">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" class="form-control"
+                       placeholder="Ej.: Ana Torres" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" id="email" name="email" class="form-control"
+                       placeholder="tucorreo@ejemplo.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="form-control" rows="4"
+                          placeholder="¿En qué podemos ayudarte?" required></textarea>
+              </div>
+              <div class="d-grid gap-2 d-md-block">
+                <button type="submit" class="btn btn-rantix">
+                  <span class="spinner-mini" aria-hidden="true"></span> Enviar
+                </button>
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark pie-pagina">
+    <div class="container">
+      <div class="row gy-4 align-items-center text-center text-md-start">
+
+        <div class="col-12 col-md-4">
+          <img src="assets/img/rantix-isotipo-transparente.svg"
+               alt="Isotipo de Rantix Store" class="isotipo-footer">
+          <p class="texto-suave mb-0">Tecnología que se siente.</p>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h6 class="fw-bold text-uppercase mb-3">Enlaces</h6>
+          <ul class="list-unstyled mb-0">
+            <li><a class="enlace-footer" href="#inicio">Inicio</a></li>
+            <li><a class="enlace-footer" href="#productos">Productos</a></li>
+            <li><a class="enlace-footer" href="#destacado">Destacado</a></li>
+            <li><a class="enlace-footer" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h6 class="fw-bold text-uppercase mb-3">Síguenos</h6>
+          <div class="d-flex gap-3 justify-content-center justify-content-md-end">
+            <a href="#" class="icono-social" aria-label="Facebook de Rantix Store"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="icono-social" aria-label="Instagram de Rantix Store"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="icono-social" aria-label="TikTok de Rantix Store"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="icono-social" aria-label="YouTube de Rantix Store"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <hr class="linea-footer">
+      <p class="text-center texto-suave mb-0">
+        © 2026 Rantix Store — Todos los derechos reservados | Proyecto educativo del curso
+        de Hojas de Estilo en Cascada Avanzado (PC3)
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
