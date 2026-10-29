@@ -113,10 +113,7 @@ h1, h2, h3 {
 .hero {
   min-height: 100vh;
   padding: 9rem 0 4rem;
-  background:
-    radial-gradient(42rem 26rem at 85% 15%, rgba(254, 111, 19, 0.16), transparent 65%),
-    radial-gradient(34rem 34rem at 8% 92%, rgba(63, 81, 181, 0.14), transparent 65%),
-    var(--fondo);
+  background-color: var(--fondo);
 }
 
 .hero h1 {
@@ -366,17 +363,6 @@ h1, h2, h3 {
   color: #fff;
   transform: translateY(-3px);
   box-shadow: 0 10px 24px rgba(254, 111, 19, 0.4);
-}
-
-.spinner-mini {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border: 2px solid rgba(255, 255, 255, 0.35);
-  border-top-color: #fff;
-  border-radius: 50%;
-  vertical-align: -2px;
-  animation: girar 1s linear infinite;
 }
 
 .tarjeta-info,
